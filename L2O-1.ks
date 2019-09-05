@@ -38,7 +38,7 @@ function AddManeuverToFlightPlan {
 function calculatestarttime {
   parameter mnv.
   // TODO
-  return 0.
+  return 20.
 }
 
 function lockSteeringAtManeuverTarget {
