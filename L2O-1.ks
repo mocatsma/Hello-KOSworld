@@ -22,7 +22,6 @@ function doLaunch {
   dosafestage().
   print "back from dosafestage".
 }
-doLaunch().
 
 function DoAscent{
   print "DoAscent".
@@ -31,7 +30,6 @@ function DoAscent{
   lock steering to heading(targetDirection, targetPitch).
   Print "Done DoAscent".
 }
-DoAscent().
 
 Function DoAutostage {
   if not(defined OldThrust){
@@ -50,14 +48,13 @@ Function DoAutostage {
     print "Thrust: " + OldThrust.
   }
   print "thrust check4".
-DoAutostage().
+}
 
 function DoShutdown {
   lock throttle to 0.
   lock steering to prograde.
   wait until false.
 }
-doShutdown().
 
 function dosafestage {
   print "dosafestage".
